@@ -1,0 +1,33 @@
+{
+  "name": "ashish",
+  "version": "1",
+  "description": "no",
+  "main": "index.js",
+  "author": "airborne",
+  "license": "MIT",
+  "dependencies": {
+                    "@hot-loader/react-dom": "17.0.2",
+                    "express": "4.18.2",
+                    "mongodb": "5.0.1",
+                    "react": "18.2.0",
+                    "react-dom": "18.2.0",
+                    "react-hot-loader": "4.13.1"
+  },
+  "devDependencies": {
+                    "@babel/core": "7.20.12",
+                    "@babel/preset-env": "7.20.2",
+                    "@babel/preset-react": "7.18.6",
+                    "babel-loader": "9.1.2",
+                    "nodemon": "2.0.20",
+                    "webpack": "5.75.0",
+                    "webpack-cli": "5.0.1",
+                    "webpack-dev-middleware": "6.0.1",
+                    "webpack-hot-middleware": "2.25.3",
+                    "webpack-node-externals": "3.0.0"
+  },
+  "scripts": {
+                    "development": "nodemon",
+                    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+                    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  }     
+}
